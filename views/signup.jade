@@ -1,0 +1,35 @@
+//signup.jade
+doctype html
+html
+  head
+   title Sign Up
+   style(type="text/css").
+    .container {
+    width: 300px;
+    clear: both;
+    }
+    input {
+       width: 100%; clear: both;
+      }
+
+
+  body
+    .container
+
+      h1 Sign Up
+
+      form(name = "find", action = "/api/0.1/users/create", method = "post")
+        label Username
+        input(type="text", name="username", id="username")
+        br
+        label Email
+        input(type="text", name="email", id="email")
+        br
+        label Password
+        input(type="password", name="password", id="password")
+        br
+        label Confirm Password
+        input(type="password", name="repeat_password", id="confirmPassword")
+        br
+        br
+        input(type="submit", value="Sign Up")

@@ -1,0 +1,18 @@
+//login.jade
+doctype html
+html
+  head
+   title Login
+
+  body
+
+    h1 Login
+
+    form(name = "login", action = "/users/login", method = "post")
+      | Username
+      input(type="text", name="username", id="username")
+      br
+      | Password
+      input(type="text", name="password", id="password")
+      br
+      input(type="submit", value="Login")
